@@ -40,6 +40,12 @@ Soy Javier Del Valle y soy profesor de canto desde el 2012, titular de la cáted
 <br/><br/>En mis clases además de la técnica, les transmito todo lo que aprendí a través de mi experiencia, qué necesitan para afrontar un escenario, un show, para que no solo aprendan a cantar sino que se conviertan en verdaderos artistas y logren conectar su esencia con su voz.
 `;
 
+const cvFlorenciaCuriel = `
+Mi nombre es Florencia Curiel y soy Profesora superior de Danzas Urbanas y de Danzas Árabes. Doy clases desde el 2014 como parte del staff de Tendencias Actuales, en el colegio Santo Tomas de Aquino de Ramos Mejia y en distintos institutos privados.
+<br/><br/> Participé como bailarina en shows de música y baile urbano para eventos sociales y empresariales.
+<br/><br/>En mis clases trabajamos principalmente la técnica del reggaeton, para luego abordar distintas coreografías de estilos urbanos, así como también para desarrollar el “Freestyle”.
+`;
+
 const cvSantiagoCuriel = `
 Mi nombre es Santiago Curiel, tengo 19 años, soy profe de estilos urbanos y actualmente doy clases de Hip Hop. Hice la carrera de profesorado de danzas urbanas en Tendencias Actuales, donde me recibí hace 3 años. En este momento me dedico a brindar un espacio de baile para todas las edades, con el propósito de integrar a quien lo desee a la cultura del Hip Hop. 
 <br/> <br/>Formé parte de una crew con la cual competimos en el "TIR Argentina", escenario en donde relucen grupos de muy buenos bailarines dedicados exclusivamente al estilo urbano. 
@@ -55,15 +61,35 @@ Actualmente estoy estudiando como maestra de educación inicial.
 En mis clases vamos a  aprender a bailar con los dancecovers de nuestros grupos favoritos. Mi objetivo en las clases es generar un espacio de diversión y aprendizaje, donde compartamos la pasión por éste hermoso estilo.
 `;
 
+const cvSabrinaCasalini = `
+Mi nombre es Sabrina Casalini. Dicto las clases de Commercial Dance y las materias teóricas del profesorado de danzas, así como también algunas materias del profesorado de canto. Trabajé profesionalmente como bailarina, modelo y docente desde el 2008.
+<br/><br/>
+Algunos shows en los que bailé: Tendencias Actuales, EkissD, Lourdes y la Factoría, Yolanda Vip, La Armada Cósmica, Esabanda.
+<br/>Algunas marcas de ropa para las que modelé: Petra Lingerie, Dual Power Street, El Deseo, TahDah, Emilio Rivas, Lis Anais.
+<br/>Algunos videoclips que protagonicé: Champagne Boy (Xango Stylo), Cuando lo olvides (Agrupación Marilyn), "Deja Vu" (Elias y Nanoo), "Buscando"(Nanoo)
+<br/>Algunos programas de TV en los que participé: Tenemos WiFi, Talento Argentino I y II, Mañaneras, Informadísimos, Drummer TV.
+<br/>
+Algunos lugares en los que dicté clases (regulares, reemplazos o masterclass): Centro Cultural Jorge Luis Congett (San Justo), Academia Laura Fidalgo (Capital), Convención Marcelo Levin (C.A.B.A), Convención de ritmos (Venezuela), Colegio Don Bosco (Ramos Mejía), Convención Cristian Funes (San Miguel), Instituto Mariano Moreno (Villa Madero).
+<br/><br/>
+Me fascina la lectura y estoy en constante aprendizaje sobre temas diversos. 
+Soy coach ontológico (Axon Training), hice una diplomatura en terapias cognitivas conductuales (ITCC) y estudié dos años de la licenciatura en Psicología (Universidad Kennedy).
+<br/><br/>
+En el 2020 comencé a incursionar en el desarrollo web. Tengo una diplomatura en desarrollo web fullstack (UTN - B.A) y me encargo de la implementación de recursos tecnológicos en Tendencias Actuales (aulas virtuales, sistema de certificaciones, diseño gráfico, etc.)
+<br/><br/>
+Con el tiempo adopté una filosofía minimalista: menos pero mejor.
+En las clases teóricas, mi objetivo es generar un espacio de intercambio donde podamos tanto compartir, como replantearnos algunas cuestiones concernientes a los temas del plan de estudio que nos toque trabajar, así como también generar el interés para que el alumno siga investigando por su cuenta, con una actitud crítica hacia los contenidos que consuma.
+En las clases de baile, me centro en trabajar la técnica básica y la expresión del estilo que esté dictando.
+`;
+
 const myDataStaff = [
 
     {
         "nombre": "Mónica Espinoza",
         "cargo": `Coordinadora general<br/> Prof. superior de piano, solfeo y teoría.<br/>Profesora de danzas.`,
-        "fotoPerfil": "img/STAFF PCP MoniB&W.png",
+        "fotoPerfil": "img/staff-monicaespinoza.png",
         "linkTo": "/staff/monica-espinoza#",
         "slug": "monica-espinoza",
-        "fotoBanner": "",
+        "fotoBanner": "/img/portada-monica.jpg",
         "video": "",
         "frase": "La música nos ubica en ese espacio entre la realidad y la fantasía donde todo es posible.",
         "cv": cvMonicaEspinoza
@@ -73,7 +99,7 @@ const myDataStaff = [
     {
         "nombre": "Javier Del Valle",
         "cargo": `Profesor de canto popular</br> Coach vocal`,
-        "fotoPerfil": "img/STAFF PCP JaviB&W.png",
+        "fotoPerfil": "img/staff-javierdelvalle.png",
         "linkTo": "/staff/javier-del-valle#",
         "slug": "javier-del-valle",
         "fotoBanner": "/img/portada-encontra-tu-voz.jpg",
@@ -85,7 +111,7 @@ const myDataStaff = [
     {
         "nombre": "Denise Urigüen",
         "cargo": `Locutora nacional</br> Profesora de locución`,
-        "fotoPerfil": "img/STAFF PCP Denise2B&W.png",
+        "fotoPerfil": "img/staff-deniseuriguen.png",
         "linkTo": "/staff/denise-uriguen#",
         "slug": "denise-uriguen",
         "fotoBanner": "/img/portada-profesorado-canto-popular.jpg",
@@ -97,7 +123,7 @@ const myDataStaff = [
     {
         "nombre": "Ignacio Llanes",
         "cargo": `Actor </br> Profesor de actuación`,
-        "fotoPerfil": "img/STAFF PCP Ignacio.png",
+        "fotoPerfil": "img/staff-ignaciollanes.png",
         "linkTo": "/staff/ignacio-llanes#",
         "slug": "ignacio-llanes",
         "fotoBanner": "/img/portada-taller-actuacion.jpg",
@@ -109,19 +135,19 @@ const myDataStaff = [
     {
         "nombre": "Florencia Curiel",
         "cargo": `Profesora superior de danzas urbanas</br> Profesora de reggaetón`,
-        "fotoPerfil": "img/STAFF PD Flor.png",
+        "fotoPerfil": "img/staff-florenciacuriel.png",
         "linkTo": "/staff/florencia-curiel#",
         "slug": "florencia-curiel",
         "fotoBanner": "/img/portada-clases-reggaeton.jpg",
         "video": "https://www.youtube.com/embed/uuG6m6Uh_k0",
-        "frase": "Falta frase Flor",
-        "cv": "falta Cv Flor"
+        "frase": "La técnica es la herramienta que te va a ayudar a expresar lo que tu espíritu siente",
+        "cv": cvFlorenciaCuriel
     },
 
     {
         "nombre": "Santiago Curiel",
-        "cargo": `Profesora superior de danzas urbanas</br> Profesor de hip-hop y electrodance`,
-        "fotoPerfil": "img/STAFF PD Santi.png",
+        "cargo": `Profesor superior de danzas urbanas</br> Profesor de hip-hop y electrodance`,
+        "fotoPerfil": "img/staff-santiagocuriel.png",
         "linkTo": "/staff/santiago-curiel#",
         "slug": "santiago-curiel",
         "fotoBanner": "/img/portada-clases-hh.jpg",
@@ -133,7 +159,7 @@ const myDataStaff = [
     {
         "nombre": "Leila Correa",
         "cargo": `Profesora superior de k-pop dance`,
-        "fotoPerfil": "img/STAFF PD Leila.png",
+        "fotoPerfil": "img/staff-leilacorrea.png",
         "linkTo": "/staff/leila-correa#",
         "slug": "leila-correa",
         "fotoBanner": "/img/portada-profesorado-kpop.jpg",
@@ -145,7 +171,7 @@ const myDataStaff = [
     {
         "nombre": "Federico Robles",
         "cargo": `Profesor de canto popular </br> Profesor de T.I.R.`,
-        "fotoPerfil": "img/STAFF PCP FedeB&W.png",
+        "fotoPerfil": "img/staff-federicorobles.png",
         "linkTo": "/staff/federico-robles#",
         "slug": "federico-robles",
         "fotoBanner": "/img/portada-cursada.jpg" ,
@@ -157,13 +183,13 @@ const myDataStaff = [
     {
         "nombre": "Sabrina Casalini",
         "cargo": `Profesora de commercial dance </br> Profesora de teoría (P.D)`,
-        "fotoPerfil": "img/STAFF PD SabriB&W.png",
+        "fotoPerfil": "img/staff-sabrinacasalini.png",
         "linkTo": "/staff/sabrina-casalini#",
         "slug": "sabrina-casalini",
         "fotoBanner": "/img/portada-commercial-dance.jpg" ,
         "video": "",
-        "frase": "Falta frase Sabrina",
-        "cv": "falta Cv Sabrina"
+        "frase": "Eppur si mouve",
+        "cv": cvSabrinaCasalini
     }
 
 

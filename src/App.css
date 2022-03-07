@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
 /* ------Header----------*/
 
@@ -245,13 +245,7 @@ li{
   }
 }
 
-.bg-img-portada{
-  background-image: url("/public/img/portada-tendencias-actuales.jpg");
-}
 
-.bg-img-music{
-  background-image: url("https://www.teahub.io/photos/full/200-2007772_free-rock-on-animated-music-gif-phone-wallpaper.gif");
-}
 
 
 /*-----Elements-------*/
@@ -528,7 +522,7 @@ input[type="date"],
 input[type="email"],
 input[type="password"],
 select{
-  height: 2rem;
+  height: 6rem;
   width: 100%;
   border-radius: 6px;
   border: 1px solid #6d1872;
@@ -536,6 +530,7 @@ select{
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 10px;
+  display: flex;
 }
 
 input[type="submit"]{
@@ -565,6 +560,27 @@ input:focus{
 input[type="checkbox"]{
   width: 20px;
   margin-right: 2rem;
+}
+
+textarea{
+  height: 6rem;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #6d1872;
+  font-family: "Poppins";
+  font-size: 0.9rem;
+  display: flex;
+  resize: none;
+  color: #6d1872;
+  padding: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.link-send-wa{
+  font-size: 1.2rem;
+  border: 2px solid #6d1872;
+  padding: 0.4rem;
+  border-radius: 6px;
 }
 
 /*-------------Details------------*/

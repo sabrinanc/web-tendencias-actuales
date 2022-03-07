@@ -12,7 +12,7 @@ const Error404 = (props) => {
 
 
                 <div className="container    reveal">
-                    <img className='corazon-gif' src='/img/404todosld.png'></img>
+                    <img className='corazon-gif' src='/img/404todosld.webp' alt='error404'></img>
                     <h1 className="title">Lo sentimos, no encontramos esta página</h1>
                     <p>Pero ya que estás acá, te compartimos una frase:</p>
                     <h3>"Sín música, la vida sería un error"</h3>

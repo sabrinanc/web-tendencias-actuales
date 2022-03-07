@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Contacto = (props) => {
+
+    const [msjWa, setMsjWa] = useState("")
+
+    useEffect(() => {
+        document.querySelector("#send-wa-msj").addEventListener("click", (e) => {
+            setMsjWa(document.querySelector("#msj-wa").value)
+        })
+    
+    }, [msjWa])
+    
     
     return(
        
@@ -11,22 +21,20 @@ const Contacto = (props) => {
 
                 <div className="container">
 
-                    <h2 className="title">Hablemos...</h2>
                     <p className="title">
-                     por WhatsApp al <br></br>
-                     <b><a href="https://api.whatsapp.com/send?phone=+541141749292&text=%C2%A1Hola!%20Quisiera%20recibir%20informaci%C3%B3n%20sobre..."><i className="fa-brands fa-whatsapp"></i> 15-4174-9292</a></b>
-                    </p>
-  
-
+                     Hablemos por WhatsApp al <br></br>
+                     <b><i className="fa-brands fa-whatsapp"></i> 15-4174-9292</b>
+                    </p>  
+                    
+                    <textarea type="text" className='wa-msj' id='msj-wa' placeholder='Escribinos tu consulta'></textarea>
+                    <a className='link-send-wa' id="send-wa-msj" href={`https://api.whatsapp.com/send?phone=+541141749292&text=${msjWa}`} target="_blank" rel="noreferrer">
+                        Enviar WhatsApp <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
+                
                 </div>
-
 
             </div>
 
-
-
-            
-         
         </main>
         
     

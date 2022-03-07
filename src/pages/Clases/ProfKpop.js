@@ -176,18 +176,18 @@ const ProfKpop = (props) => {
                         
                         <HashLink smooth to="/staff/leila-correa#">
                         <div className="section-banner-card-2    reveal">
-                            <img  src="img/STAFF PD Leila.png" alt=""/>
+                            <img  src="img/staff-leilacorrea.png" alt=""/>
                             <h3 className="title">Leila Correa</h3>
-                            <p>Prof. superior de k-pop dance.
+                            <p>Profesora superior de k-pop dance
                             </p>
                         </div>
                         </HashLink>
 
                         <HashLink smooth to="/staff/santiago-curiel#">
                         <div className="section-banner-card-2    reveal">
-                            <img  src="img/STAFF PD Santi.png" alt="santiago curiel"/>
+                            <img  src="img/staff-santiagocuriel.png" alt="santiago curiel"/>
                             <h3 className="title">Santiago Curiel</h3>
-                            <p>Prof. superior de danzas urbanas. <br/>Profesor de hip-hop dance y electrodance
+                            <p>Profesor superior de danzas urbanas <br/>Profesor de hip-hop dance y electrodance
                             </p>
                         </div>
                         </HashLink>
@@ -195,20 +195,19 @@ const ProfKpop = (props) => {
                       
                         <HashLink smooth to="/staff/sabrina-casalini#">
                         <div className="section-banner-card-2    reveal">
-                            <img  src="img/STAFF PD SabriB&W.png" alt="sabrina casalini"/>
+                            <img  src="img/staff-sabrinacasalini.png" alt="sabrina casalini"/>
                             <h3 className="title">Sabrina Casalini</h3>
-                            <p>Prof. superior de danzas urbanas.
-                            <br/> Prof. de Commercial Dance
-                            <br/> Prof. de teoría (prof danzas)
+                            <p>Profesora de commercial dance
+                            <br/> Profesora de teoría (danzas)
                             </p>
                         </div>
                         </HashLink>
 
                         <HashLink smooth to="/staff/monica-espinoza#">
                         <div className="section-banner-card-2    reveal">
-                            <img  src="img/STAFF PCP MoniB&W.png" alt="monica espinoza"/>
+                            <img  src="img/staff-monicaespinoza.png" alt="monica espinoza"/>
                             <h3 className="title">Mónica Espinoza</h3>
-                            <p>Prof. superior de piano, solfeo y teoría. <br/>Lic. en Psicología U.B.A.<br/>Profesora de danzas.
+                            <p>Coordinadora general T.A.
                             </p>
                         
                         </div>

@@ -30,7 +30,7 @@ const Certificaciones = (props) => {
                             <img className="icono-certificado" alt="certificado" src="http://drive.google.com/uc?export=view&id=1K9hIE3ZEKLecflk9Zjjya-Kg9VCpzkU0" />
                         </div>
                         <div>
-                            <p><b>Certificado válido</b></p>
+                            <p id='certificado-valido'>CERTIFICADO VÁLIDO</p>
                             <p id="id-certificado-verificado"></p>
                         </div>
                     </div>

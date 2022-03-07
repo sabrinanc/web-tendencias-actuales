@@ -9,10 +9,10 @@ import Inicio from './pages/Inicio';
 import Clases from './pages/Clases';
 import Staff from  './pages/Staff';
 import Error404 from './pages/Error404';
+import Contacto from './pages/Contacto';
 
 
 import { revealEffect } from './helpers/revealEffect';
-import Contacto from './pages/Contacto';
 
 
 import ProfCanto from './pages/Clases/ProfCanto';
@@ -22,13 +22,8 @@ import ProfKpop from './pages/Clases/ProfKpop';
 import CursoIngresoPd from './pages/Cursos-ingreso/CursoIngresoPd';
 import Certificaciones from './pages/Certificaciones';
 
-/*--Pages CVs STAFF--*/
-
 import StaffCv from './pages/StaffCv';
 import CertificacionesId from './pages/CertificacionesId';
-
-
-
 
 
 function App() {
@@ -52,7 +47,6 @@ function App() {
               <Route path="/"  element={<Inicio />} />
               <Route path="/clases"  exact element={<Clases />} />
               <Route path="/staff"  exact element={<Staff />} />
-              <Route path="/blog"  exact element={<Clases />} />
               <Route path="/contacto"  exact element={<Contacto />} />
               
 

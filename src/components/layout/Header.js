@@ -35,15 +35,15 @@ const Header = (props) => {
 
                     <div className="header-container-links">
                  
+                        <NavLink to="/">INICIO</NavLink>
                         <NavLink to="/clases">CLASES</NavLink>
-                        <NavLink to="/staff">STAFF</NavLink>
                     </div>
                     <div className="header-container-links">
                         <NavLink to="/"><img alt="logo" src="/img/logo-ta.png" className="logo"></img></NavLink>
                     </div>
 
                     <div className="header-container-links">
-                        <NavLink to="/blog">BLOG</NavLink>
+                        <NavLink to="/staff">STAFF</NavLink>
                         <NavLink to="/contacto">CONTACTO</NavLink>
                     </div>
                     

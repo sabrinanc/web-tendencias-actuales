@@ -87,7 +87,7 @@ const CursoIngresoPcp = (props) => {
                 </p>
                 <p className="text1">
                     Si aún no te inscribiste no olvides hacerlo! <br/>
-                    <a className="a-btn" href="https://forms.gle/tE3j7hhSBaGL5eBP9" target="_blank" rel="noreferrer">Formulario de inscripción</a><br></br>
+                    <a className="a-btn" href="https://forms.gle/tE3j7hhSBaGL5eBP9" target="_blank" rel="noreferrer"><i className="fa-solid fa-id-card"></i> Formulario de inscripción</a><br></br>
                 </p>
 
                 

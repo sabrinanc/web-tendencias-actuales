@@ -17,7 +17,7 @@ const firebaseConfig = {
     measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENTID
 };
 
-/*
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -26,4 +26,3 @@ const db = getFirestore(app);
 
 export default db;
 
-*/

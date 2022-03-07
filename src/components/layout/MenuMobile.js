@@ -35,7 +35,6 @@ const MenuMobile = (props) => {
                 <NavLink to="/" onClick={closeModal}>INICIO</NavLink>
                 <NavLink to="/clases" onClick={closeModal}>CLASES</NavLink>
                 <NavLink to="/staff" onClick={closeModal}>STAFF</NavLink>
-                <NavLink to="/blog" onClick={closeModal}>BLOG</NavLink>
                 <NavLink to="/contacto" onClick={closeModal}>CONTACTO</NavLink>
                 
             </nav>

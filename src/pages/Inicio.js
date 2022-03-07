@@ -12,14 +12,14 @@ const Inicio = (props) => {
             <div className="first-container">
 
 
-                <div className="container    reveal">
+                <div className="container">
 
                     <h1 className="title">Tu espacio de <br></br><b>formación artística</b></h1>
                     <p className="text">
                      Desde hace 20 años estamos formando artistas y profesores, con un mismo  objetivo: que alcances tu máximo desarrollo artístico y personal, 
                      y darte las herramientas para ayudar a que otros lo hagan.   
                     </p>
-                    <img className='corazon-gif' src='/img/corazon-ta.gif'></img>
+                    <img className='corazon-gif' src='https://drive.google.com/uc?export=view&id=13p27D446506zyeV6rUnB21ASsFXAO9CJ' alt='corazon ta'></img>
 
                 </div> 
 

@@ -2,7 +2,7 @@ import { doc, getDoc } from 'firebase/firestore';
 
 import React, { useEffect, useState } from 'react';
 
-// import db from '../firebase/firebase-config';
+import db from '../firebase/firebase-config';
 
 import { useParams } from "react-router-dom";
 import SvgComponent from '../components/minicomponents/Certificadosvg';
@@ -11,19 +11,21 @@ import SvgComponent from '../components/minicomponents/Certificadosvg';
 // Download diploma
 import jsPDF from 'jspdf';
 import { svgAsPngUri } from "save-svg-as-png";
+import { isMobile } from '../helpers/isMobile'
 
 
 
 
 const CertificacionesId = (props) => {
 
-    const { idCertificado } = useParams();
-    /*
-    
-    
-   
-    const [certificadoSelected, setCertificadoSelected] = useState("inicio")
+  const { idCertificado } = useParams();
 
+
+  //Conección a Firebase
+
+   
+  
+  const [certificadoSelected, setCertificadoSelected] = useState("inicio")
 
   useEffect(() => {
 
@@ -34,7 +36,7 @@ const CertificacionesId = (props) => {
       const docSnap = await getDoc(docRef);
 
       if (docSnap.exists()) {
-        console.log("Document data:", docSnap.data());
+        //console.log("Document data:", docSnap.data());
         let certi = docSnap.data()
         setCertificadoSelected(certi)
     
@@ -52,7 +54,7 @@ const CertificacionesId = (props) => {
   }, []);
 
    
-    */
+   
 
   //// Descargar diploma
 
@@ -71,9 +73,13 @@ const CertificacionesId = (props) => {
     pdf.save("certificado-tendenciasactuales.pdf");
   }
 
-  
-  
+  useEffect(() => {
+    if (isMobile() !== null){
+      document.getElementById("div-descargar-certificado").classList.add("d-none")
+     }
 
+  }, [])
+  
  
     return(
        
@@ -86,18 +92,18 @@ const CertificacionesId = (props) => {
               <div className='container'>
 
                 <SvgComponent className="diploma-ta"
-                     nombre={"Nicolás Ángel Surdi"} 
-                     materia={"Ingeniero electrónico"}
-                     fecha={"22/02/2022"}
-                     codigo={"15442-IUY-098383"}
-                     horas={"960"}
+                     nombre={certificadoSelected.nombre} 
+                     materia={certificadoSelected.materia}
+                     fecha={certificadoSelected.fecha}
+                     codigo={certificadoSelected.codigo}
+                     horas={certificadoSelected.horas}
                 ></SvgComponent>
                   
               </div>
                 <div className="container">
                   <h2 className='title'>¡Felicitaciones, lo lograste!</h2>
                   <p>Te felicitamos de parte de todo el staff de Tendencias Actuales por tu esfuerzo. ¡Seguí trabajando en vos y poco a poco alcanzarás todas tus metas!</p>
-                  <div>
+                  <div id='div-descargar-certificado'>
                     Descargar el certificado
                     <button onClick={downLoadPDF} className="btn-icon">
                       <i className="fa-solid fa-file-arrow-down"></i>
@@ -107,13 +113,13 @@ const CertificacionesId = (props) => {
                   <div>
                     Compartir en redes sociales 
                     <br/>
-                    <a className='icon' href={`https://www.facebook.com/sharer/sharer.php?u=http://www.tendenciasactuales.com.ar/certificaciones/${idCertificado}`}>
+                    <a className='icon' target="_blank" rel="noreferrer" href={`https://www.facebook.com/sharer/sharer.php?u=http://www.tendenciasactuales.com.ar/certificaciones/${idCertificado}`}>
                         <i className="fa-brands fa-facebook"></i>
                     </a>
-                    <a className='icon' href={`https://www.linkedin.com/sharing/share-offsite/?url=http://www.tendenciasactuales.com.ar/certificaciones/${idCertificado}`}>
+                    <a className='icon' target="_blank" rel="noreferrer" href={`https://www.linkedin.com/sharing/share-offsite/?url=http://www.tendenciasactuales.com.ar/certificaciones/${idCertificado}`}>
                         <i className="fa-brands fa-linkedin"></i>
                     </a>
-                    <a className='icon' href={`https://api.whatsapp.com/send?text=http://www.tendenciasactuales.com.ar/certificaciones/${idCertificado}`}>
+                    <a className='icon' target="_blank" rel="noreferrer" href={`https://api.whatsapp.com/send?text=http://www.tendenciasactuales.com.ar/certificaciones/${idCertificado}`}>
                         <i className="fa-brands fa-whatsapp"></i>
                     </a> 
                   </div>

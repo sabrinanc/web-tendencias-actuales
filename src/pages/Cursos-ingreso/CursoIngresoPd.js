@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 
 const CursoIngresoPd = (props) => {
     
@@ -21,7 +20,7 @@ const CursoIngresoPd = (props) => {
                         ¡Empecemos!
                    </p>
                     
-                   <iframe width="100%" height="285" src="https://www.youtube.com/embed/34t-isPNtfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <iframe width="100%" height="285" src="https://www.youtube.com/embed/ySU19U87-PE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 
                 </div>
@@ -35,7 +34,7 @@ const CursoIngresoPd = (props) => {
 
                 <h3 className="title">#1 Evaluación de rítmica</h3>
 
-                <iframe width="100%" height="285" src="https://www.youtube.com/embed/wFpmKAiT3ok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="285" src="https://www.youtube.com/embed/DU8sA6SvGGg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
                 <p>
                     <ul>
@@ -45,10 +44,14 @@ const CursoIngresoPd = (props) => {
                 </p>
 
                 
-                <h3 className="title">#2 Evaluación de coreografía</h3>
+                <h3 className="title">#2 Evaluación de técnica y coreografía</h3>
+                <iframe width="100%" height="285" src="https://www.youtube.com/embed/2OlY1W_1e5c" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
                 <p>
-                    Envianos un video con la minicoreo de ingreso. El video no debe tener ediciones.
+                    Envianos un video tuyo bailando la mini coreo del tutorial. Al final podés bailar libre. El video no debe tener ediciones.
                     Tendremos en cuenta tanto el aspecto técnico como la interpretación.
+                    <br></br>
+                    <a className='a-btn' href='https://drive.google.com/u/2/uc?id=1vQvUr0ND8yseBDnVpeJJSeYQO5lbgTjY&export=download' target="_blank" rel="noreferrer"><i className="fa-solid fa-cloud-arrow-down"></i> Descargar canción</a>
                 </p>
 
                 <h3 className="title">#3 Entrevista personal</h3>
@@ -85,7 +88,7 @@ const CursoIngresoPd = (props) => {
                 </p>
                 <p className="text1">
                     Si aún no te inscribiste no olvides hacerlo! <br/>
-                    <a className="a-btn" href="https://forms.gle/tE3j7hhSBaGL5eBP9" target="_blank" rel="noreferrer">Formulario de inscripción</a><br></br>
+                    <a className="a-btn" href="https://forms.gle/tE3j7hhSBaGL5eBP9" target="_blank" rel="noreferrer"><i className="fa-solid fa-id-card"></i> Formulario de inscripción</a><br></br>
                     
                 </p>
 
