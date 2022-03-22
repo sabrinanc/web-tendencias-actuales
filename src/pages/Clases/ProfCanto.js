@@ -1,8 +1,4 @@
 import React from 'react';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-import Testimonios from "../../components/minicomponents/TestimoniosPcp";
-
 import { HashLink } from 'react-router-hash-link';
 import myData from "../../helpers/myData";
 
@@ -179,13 +175,150 @@ const ProfCanto = (props) => {
 
             <img src="/img/portada-cursada.jpg" alt="banner" className="img-br"></img>
 
-            <div className="middle-container  ">
+            <section id="testimonios-pcp">
 
-                <div className="container-slider1" id="testimonios">
-                    <Testimonios></Testimonios>
-                </div>  
-  
-            </div>
+                <div className="container" id='testimonios'>
+                    <h2 className="title">Testimonios</h2>
+                </div>
+                <div className='container-testimonios2'>
+
+                    <details className='details-testimonios'>
+
+                        <summary className='summary-testimonios'>
+                            
+                            <img  src="img/user-rr.png" alt="" />
+                            
+                            <p>"Agradezco el tener tan buenos docentes, muy dedicados y siempre atentos a nuestras necesidades."
+                            <br></br><br></br>
+                            <b>Romina Reimondez</b> <br></br>
+                                Estudiante 2do año (2021)
+                            </p>
+                            
+                            <i class="fa-solid fa-angles-down"></i>
+
+                            
+                                
+                                
+                        </summary>
+
+                        <p>
+                        "Agradezco el tener tan buenos docentes, muy dedicados y siempre atentos a nuestras necesidades. 
+                        Aprendí a confiar más en mí, a descubrir cosas que creía imposibles de hacer. No solo nos brindaron contenido teórico sino sobre la vida, de conectar con uno, disfrutar, confiar, y abrazar lo que somos.
+                        </p>
+                        <p>
+                        A quien esté por empezar la carrera le diría que no dude y se anime a intentar, que se va a encontrar con un excelente equipo docente, un completo plan de estudios y que realmente se va a poder conectar con su esencia explotando al máximo todo su potencial y disfrutando de ese proceso."
+                        </p>
+                        
+                    </details>
+                    <details className='details-testimonios'>
+
+                        <summary className='summary-testimonios'>
+                            
+                            <img  src="img/user-go.png" alt="" />
+                            
+                            <p>
+                            "Tuve muchísimos aprendizajes, nervios antes de cada examen, hice nuevos amigos y estoy feliz de ser parte de los alumnos de TA."
+                            <br></br><br></br>
+                            <b>Gabriel Ortiz</b> <br></br>
+                                Estudiante 2do año (2021)
+                            </p>
+                            
+                            <i class="fa-solid fa-angles-down"></i>
+
+                            
+                                
+                                
+                        </summary>
+
+                        <p>
+                            "Me siento muy bien tanto con el material de estudio y con la forma en que los profes explican.
+                            <br></br><br></br>
+                            La relación con mis compañeros es super buena, realizamos covers grupales y siento que esas cosas nos re unen.
+                            <br></br><br></br>
+                            Tuve muchísimos aprendizajes, nervios antes de cada examen, hice nuevos amigos y estoy feliz de ser parte de los alumnos de TA.
+                            <br></br><br></br>
+                            Mi sueño es poder transmitir todo lo que aprendí, sigo aprendiendo y también el amor a la música."
+                        </p>
+                        
+                    </details>
+                    <details className='details-testimonios'>
+
+                        <summary className='summary-testimonios'>
+                            
+                            <img  src="img/user-mfv.png" alt="" />
+                            
+                            <p>"A quien esté por comenzar quisiera decirle que arranque con todo, la carrera es hermosa."
+                            <br></br><br></br>
+                            <b>María Florencia Velazquez</b> <br></br>
+                                Estudiante 1er año (2021)
+                            </p>
+                            <i class="fa-solid fa-angles-down"></i>              
+                        </summary>
+
+                        <p>
+                            "Los profes son muy buenos y atentos, llevan la docencia con mucho amor. Además tengo muy buena relación con mis compañeras, incluso tenemos grupo de WhatsApp!
+                            <br></br> <br></br> 
+                            Me gustan todas las materias… Siento que crecí mucho en las presentaciones en escenario, superé mis expectativas en la presentación del Taller Actoral.
+                            <br></br><br></br>
+                            A quien esté por comenzar quisiera decirle que arranque con todo, la carrera es hermosa."
+                        </p>
+                        
+                    </details>
+                    <details className='details-testimonios'>
+
+                        <summary className='summary-testimonios'>
+                            
+                            <img  src="img/user-ss.png" alt="" />
+                            
+                            <p>"En la cursada aprendí a no decir "no puedo", todo se puede solo hay que proponérselo."
+                            <br></br><br></br>
+                            <b>Sandra Saltarelli</b> <br></br>
+                                Estudiante 1er año (2021)
+                            </p>
+                            
+                            <i class="fa-solid fa-angles-down"></i>
+
+                            
+                                
+                                
+                        </summary>
+
+                        <p>
+                            "Mi motivación para empezar fue conseguir el título…
+                            <br></br><br></br>
+                            En la cursada aprendí a no decir "no puedo", todo se puede solo hay que proponérselo. 
+                            <br></br><br></br>
+                            Los profes son re copados y mis compañeras son excelentes, de ellas también se aprende."
+                        </p>
+                        
+                    </details>
+                    <details className='details-testimonios'>
+
+                        <summary className='summary-testimonios'>
+                            
+                            <img  src="img/user-ns.png" alt="" />
+                            
+                            <p>"Me gustan todas las materias y el staff docente es excelente."
+                            <br></br><br></br>
+                            <b>Nathalia San Miguel</b> <br></br>
+                                Estudiante 1er año (2021)
+                            </p>
+                            <i class="fa-solid fa-angles-down"></i>          
+                        </summary>
+
+                        <p>
+                            "Arranqué la carrera porque la música y cantar son mi pasión, y poder enseñar a educar la voz sería el combo perfecto.
+                            <br></br><br></br>
+                            Me gustan todas las materias y el staff docente es excelente.
+                            <br></br><br></br>
+                            Si estás por empezar a cursar no lo dudes, es el empujón para comenzar tus sueños…"
+                        </p>
+                        
+                    </details>
+
+                    </div>
+
+            </section>
 
             <section id="faq-pcp">
 

@@ -14,7 +14,7 @@ const Certificaciones = (props) => {
                 <div className="contenedor-autenticacion">
                 <div className="contenedor-input" id="contenedor-input">
                     <div className="contenedor-logo-input">
-                        <img className="logo-input" alt='logo' src="http://drive.google.com/uc?export=view&id=1jT41KpiJPgMEwio2Ol7-Nyn5o7J78auW"/>
+                        <img className="logo-input" alt='logo' src="img/logo-ta.png"/>
                     </div>
                     <p className="verificaciones-titulo">Verificar un certificado</p>
                     <label htmlFor="id-certificado">ID del certificado</label>
@@ -27,7 +27,7 @@ const Certificaciones = (props) => {
                 <div className="contenedor-respuesta-verificacion  novisible" id="contenedor-respuesta-verificacion">
                     <div className="contenedor-respuesta-titulo">
                         <div className="contenedor-img-certificado">
-                            <img className="icono-certificado" alt="certificado" src="http://drive.google.com/uc?export=view&id=1K9hIE3ZEKLecflk9Zjjya-Kg9VCpzkU0" />
+                            <img className="icono-certificado" alt="certificado" src="/img/certificado.png" />
                         </div>
                         <div>
                             <p id='certificado-valido'>CERTIFICADO VÁLIDO</p>

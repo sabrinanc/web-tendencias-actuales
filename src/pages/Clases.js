@@ -1,7 +1,5 @@
 import React from 'react';
-import { HashLink } from "react-router-hash-link";
 import CursoCard from '../components/minicomponents/CursoCard';
-import { filtrarEntradas } from "../helpers/filtrarEntradas";
 import myDataCursos from '../helpers/myDataCursos';
 
 const Clases = (props) => {
@@ -14,13 +12,8 @@ const Clases = (props) => {
 
                 <div className="container-blog">
                     
-
-                    <p className="title" id="hashtags">Quiero aprender
-                        <button onClick={filtrarEntradas} className="btn-hashtag">todo</button>
-                        <button onClick={filtrarEntradas} className="btn-hashtag">#música</button>
-                        <button onClick={filtrarEntradas} className="btn-hashtag">#danza</button>
-                        <button onClick={filtrarEntradas} className="btn-hashtag">#canto</button>
-                    </p> 
+     
+                    <h2 className='title'>Clases</h2>
                     
                     <div className="container-blog-cards">   
                         {

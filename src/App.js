@@ -64,7 +64,10 @@ function App() {
               <Route path='*' element={<Error404/>}/>
             
               
-
+              <Route path="/oferta-académica/profesorado-de-canto-popular"  exact element={<ProfCanto/>} />
+              <Route path="/oferta-académica/profesorado-de-danzas-urbanas"  exact element={<ProfUrbanos />} />
+              <Route path="/oferta-académica/profesorado-de-k-pop-dance"  exact element={<ProfKpop/>} />
+              
             </Routes>
             
 

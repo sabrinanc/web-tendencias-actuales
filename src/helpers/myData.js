@@ -11,5 +11,4 @@ const myData = {
 
 }
 
-
 export default myData

@@ -1,36 +1,26 @@
 import { doc, getDoc } from 'firebase/firestore';
-
 import React, { useEffect, useState } from 'react';
-
 import db from '../firebase/firebase-config';
-
 import { useParams } from "react-router-dom";
 import SvgComponent from '../components/minicomponents/Certificadosvg';
 
 
 // Download diploma
-import jsPDF from 'jspdf';
-import { svgAsPngUri } from "save-svg-as-png";
-import { isMobile } from '../helpers/isMobile'
-
-
+// import jsPDF from 'jspdf';
+// import { svgAsPngUri } from "save-svg-as-png";
+//import { isMobile } from '../helpers/isMobile'
 
 
 const CertificacionesId = (props) => {
 
   const { idCertificado } = useParams();
 
-
   //Conección a Firebase
-
-   
-  
   const [certificadoSelected, setCertificadoSelected] = useState("inicio")
 
   useEffect(() => {
 
     const getCertificados = async() => { 
-      
       
       const docRef = doc(db, "certificados", idCertificado);
       const docSnap = await getDoc(docRef);
@@ -43,20 +33,16 @@ const CertificacionesId = (props) => {
       } else {
         // doc.data() will be undefined in this case
         console.log("No se encontró el certificado");
-}
-      
+      } 
      
     }
 
     getCertificados();
     
-
   }, []);
 
-   
-   
-
   //// Descargar diploma
+  /*
 
   async function downLoadPDF() {
     const graph = document.getElementsByClassName("diploma-ta")[0];
@@ -67,26 +53,23 @@ const CertificacionesId = (props) => {
 
     const dataURI = await svgAsPngUri(graph);
 
-    
-
     pdf.addImage(dataURI, "PNG", 0, 0);
+  
     pdf.save("certificado-tendenciasactuales.pdf");
   }
 
+  
   useEffect(() => {
     if (isMobile() !== null){
       document.getElementById("div-descargar-certificado").classList.add("d-none")
      }
 
   }, [])
-  
+  */
  
     return(
        
         <main>
-
-
-
             <div className="first-container">
 
               <div className='container'>
@@ -103,12 +86,15 @@ const CertificacionesId = (props) => {
                 <div className="container">
                   <h2 className='title'>¡Felicitaciones, lo lograste!</h2>
                   <p>Te felicitamos de parte de todo el staff de Tendencias Actuales por tu esfuerzo. ¡Seguí trabajando en vos y poco a poco alcanzarás todas tus metas!</p>
+                  {/* 
                   <div id='div-descargar-certificado'>
                     Descargar el certificado
                     <button onClick={downLoadPDF} className="btn-icon">
                       <i className="fa-solid fa-file-arrow-down"></i>
                     </button>
                   </div>
+                  */}
+
                   <br/>
                   <div>
                     Compartir en redes sociales 
@@ -124,12 +110,7 @@ const CertificacionesId = (props) => {
                     </a> 
                   </div>
                 </div>
-            </div>
-
-
-           
-            
-         
+            </div> 
         </main>
         
     

@@ -232,6 +232,7 @@ li{
   width: 100%;
 }
 
+
 .bg-img{ 
   background-position: center;
   background-size: cover;
@@ -244,9 +245,6 @@ li{
     background-size: contain;
   }
 }
-
-
-
 
 /*-----Elements-------*/
 
@@ -262,10 +260,6 @@ li{
 
 .middle-container{
   min-height: 100vh;
-}
-
-.middle-container-img{
-  min-height: 60vh;
 }
 
 .container{
@@ -300,7 +294,6 @@ li{
   background-color: #871c86; 
 }
 
-
 /*------Card--------*/
 
 .container-cards{
@@ -318,7 +311,6 @@ li{
   height: inherit;
   width: inherit;
 }
-
 
 /*------------------------Blog----------------------------*/
 .container-blog{
@@ -378,34 +370,6 @@ a.a-btn:hover{
   display: none;
 }
 
-.btn-hashtag{
-  border: none;
-  background-color: transparent;
-
-  font-family: 'Poppins';
-  font-weight: normal;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-  color: #871c86;
-  cursor: pointer;
-  transition: all 0.2s ease-in;
-}
-
-.btn-hashtag:hover{
-  background-color: #f2cb4b;
-  font-style: oblique;
-}
-
-
-
-/*----Entrada blog individual-----*/
-
-.img-blog-portada-entry{
-  width: 100%;
-  border-radius: 50px;
-}
-
-
 /*------------------Staff------------------------------------*/
 
 .section-banner-card-2{
@@ -426,71 +390,6 @@ a.a-btn:hover{
 .section-banner-card-2 > p{
   font-size: 0.8rem;
   line-height: 1.2rem;
-}
-
-
-/*--------- Testimonios -------------------*/
-
-.container-slider1{
-  width: 80%;
-  margin: auto;
-}
-
-.container-t{
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.testimonios-container{
-  width: inherit;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  margin: auto;
-  text-align: center;
-  max-width: 240px;
-  font-size: 0.8rem;
-  background-color: white;
-  border-radius: 20px;
-}
-
-.testimonios-container > p{
-  line-height : 1.2rem;
-  font-family: 'Poppins';
-  font-size: 0.7rem;
-  color: #393838;
-  text-align: justify;
-  text-align-last: center;
-}
-
-.testimonios-img{
-  margin: auto;
-  max-width: 50px;
-  margin-bottom: 1rem;
-}
-
-.slider-title{
-  color: #6d1872;
-  text-align: center;
-  margin-top: 3rem;
-}
-
-@media (max-width: 378px) {
-  .testimonios-container{
-    width: 150px;
-    padding: 1rem;
-  }
-
-  .testimonios-container > p{
-    font-size: 0.6rem;
-    line-height : 0.7rem;
-  }
-
-  ul.slick-dots,
-  ul.slick-dots > li{
-    display: none;
-  }
 }
 
 /* ---------Profesorados-------------*/
@@ -593,10 +492,8 @@ details {
   text-align-last: left;
 }
 
-
 summary {
   padding: 0.5rem;
-  font-size: 1.2rem;
   font-family: 'Poppins';
   font-weight: normal;
   font-size: 1rem;
@@ -605,13 +502,13 @@ summary {
   letter-spacing: 3px;
   text-align: justify;
   text-align-last: left;
+  cursor: pointer;
 }
-
 
 details[open] {
   padding:0.5rem;
   text-align: justify;
-  text-align-last: left;
+  text-align-last: left;  
 }
 
 details[open] summary {
@@ -664,6 +561,55 @@ details > p > ul{
     text-align: left;
   }
 
+}
+
+
+/*--- Details Testimonios----*/
+
+.container-testimonios2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.details-testimonios{
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5rem ;
+  width: 100%;
+  margin: .5em;
+  text-align-last: left;
+  max-width: 400px;
+}
+
+.summary-testimonios{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.summary-testimonios > img{
+  padding: 10px;
+  max-width: 100px;
+}
+
+.summary-testimonios > p {
+  font-size: 0.8rem;
+  letter-spacing: normal;
+  text-transform: none;
+  line-height : 1rem;
+  text-align: center;
+}
+
+.summary-testimonios > i {
+  color: #871c86;
+}
+
+.details-testimonios > p {
+  font-size: 0.8rem;
+  letter-spacing: normal;
+  line-height: 1.2rem;
+  text-align: justify;
 }
 
 /*----Curso de ingreso-----*/
